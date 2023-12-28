@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace Persistencia.Context
 {
-    class EFContext : DbContext
+    public class EFContext : DbContext
     {
         public EFContext() : base("Alugueltema") { }
 

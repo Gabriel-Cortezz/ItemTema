@@ -45,10 +45,6 @@
     <Compile Include="Tabelas\ItemTemaServico.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Aluguel-de-tema\Aluguel-de-tema.csproj">
-      <Project>{f5fd3b37-1b0c-438f-8be7-29f510b586a0}</Project>
-      <Name>Aluguel-de-tema</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Modelo\Modelo.csproj">
       <Project>{46269620-05F5-41F6-BFD6-61C47C74EFE5}</Project>
       <Name>Modelo</Name>
