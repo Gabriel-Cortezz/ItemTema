@@ -11,9 +11,35 @@ namespace Servico.Tabelas
     public class ItemTemaServico
     {
         private ItemTemaDAL itemTemaDAL = new ItemTemaDAL();
-        public IQueryable<ItemTema> ObterItemTemasClassificadosPorNome()
+
+        public ItemTemaServico()
         {
-            return itemTemaDAL.ObterItemTemasClassificadosPorNome();
+            this.itemTemaDAL = new ItemTemaDAL();
+        }
+
+        public List<ItemTema> TodosOsItensTemas()
+        {
+            return itemTemaDAL.TodosOsItensTemas();
+        }
+
+        public ItemTema ItemTemaPorID(long? id)
+        {
+            return itemTemaDAL.ItemTemaPorID(id);
+        }
+
+        public void AdicionarItemTema(ItemTema item)
+        {
+            itemTemaDAL.AdicionarItemTema(item);
+        }
+
+        public void AtualizarItemTema(ItemTema item)
+        {
+            itemTemaDAL.AtualizarItemTema(item);
+        }
+
+        public void DeletarItemTema(long? id)
+        {
+            itemTemaDAL.DeletarItemTema(id);
         }
     }
 }

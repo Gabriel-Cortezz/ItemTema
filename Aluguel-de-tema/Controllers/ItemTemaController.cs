@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Persistencia.Dal.Tabelas;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -8,11 +9,13 @@ namespace Aluguel_de_tema.Controllers
 {
     public class ItemTemaController : Controller
     {
-        private  itemTemaServico itemTemaServico = new itemTemaServico();
+        private ItemTemaServico itemTemaServico = new ItemTemaServico();
         // GET: ItemTema
         public ActionResult Index()
         {
-            return View();
+            var items = itemTemaDAL.TodosOsItensTemas();
+            return View(items);
         }
+
     }
 }

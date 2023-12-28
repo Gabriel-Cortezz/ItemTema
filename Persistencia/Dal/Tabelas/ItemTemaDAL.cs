@@ -11,36 +11,40 @@ namespace Persistencia.Dal.Tabelas
 {
     public class ItemTemaDAL
     {
-        private EFContext context = new EFContext();
+        private EFContext context;
 
-        public IQueryable<ItemTema> ObterItemTemasClassificadosPorNome()
+        public ItemTemaDAL()
         {
-            return context.itemTemas.OrderBy(b => b.nome);
+            this.context = new EFContext();
         }
 
-        public ItemTema ObterItemTemaPorId(long id)
+        public List<ItemTema> TodosOsItensTemas()
         {
-            return context.itemTemas.Where(p => p.ItemTemaId == id).Include(f => f.ItemTemaId).First();
+            return context.itemTemas.OrderBy(c => c.nome).ToList();
         }
 
-        public void GravarProduto(ItemTema itemTema)
+        public ItemTema ItemTemaPorID(long? id)
         {
-            if (itemTema.ItemTemaId == null)
-            {
-                context.itemTemas.Add(itemTema);
-            }
-            else
-            {
-                context.Entry(itemTema).State = EntityState.Modified;
-            }
+            return context.itemTemas.FirstOrDefault(i => i.ItemTemaId == id);
+        }
+
+        public void AdicionarItemTema(ItemTema itemTema)
+        {
+            context.itemTemas.Add(itemTema);
             context.SaveChanges();
         }
-        public ItemTema EliminarProdutoPorId(long id)
+
+        public void AtualizarItemTema(ItemTema itemTema)
         {
-            ItemTema itemTema = ObterItemTemaPorId(id);
+            context.Entry(itemTema).State = EntityState.Modified;
+            context.SaveChanges();
+        }
+
+        public void DeletarItemTema(long? id)
+        {
+            ItemTema itemTema = context.itemTemas.Find(id);
             context.itemTemas.Remove(itemTema);
             context.SaveChanges();
-            return itemTema;
         }
     }
 }
