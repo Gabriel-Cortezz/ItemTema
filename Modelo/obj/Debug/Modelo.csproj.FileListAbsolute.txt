@@ -1,0 +1,5 @@
+C:\Users\gabri\Source\Repos\Gabriel-Cortezz\ItemTema\Modelo\bin\Debug\Modelo.dll
+C:\Users\gabri\Source\Repos\Gabriel-Cortezz\ItemTema\Modelo\bin\Debug\Modelo.pdb
+C:\Users\gabri\Source\Repos\Gabriel-Cortezz\ItemTema\Modelo\obj\Debug\Modelo.csproj.CoreCompileInputs.cache
+C:\Users\gabri\Source\Repos\Gabriel-Cortezz\ItemTema\Modelo\obj\Debug\Modelo.dll
+C:\Users\gabri\Source\Repos\Gabriel-Cortezz\ItemTema\Modelo\obj\Debug\Modelo.pdb

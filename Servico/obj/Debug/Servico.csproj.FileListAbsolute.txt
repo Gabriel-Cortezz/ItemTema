@@ -1,0 +1,14 @@
+C:\Users\gabri\Source\Repos\Gabriel-Cortezz\ItemTema\Servico\bin\Debug\Servico.dll
+C:\Users\gabri\Source\Repos\Gabriel-Cortezz\ItemTema\Servico\bin\Debug\Servico.pdb
+C:\Users\gabri\Source\Repos\Gabriel-Cortezz\ItemTema\Servico\bin\Debug\Modelo.dll
+C:\Users\gabri\Source\Repos\Gabriel-Cortezz\ItemTema\Servico\bin\Debug\Persistencia.dll
+C:\Users\gabri\Source\Repos\Gabriel-Cortezz\ItemTema\Servico\bin\Debug\EntityFramework.dll
+C:\Users\gabri\Source\Repos\Gabriel-Cortezz\ItemTema\Servico\bin\Debug\Modelo.pdb
+C:\Users\gabri\Source\Repos\Gabriel-Cortezz\ItemTema\Servico\bin\Debug\Persistencia.pdb
+C:\Users\gabri\Source\Repos\Gabriel-Cortezz\ItemTema\Servico\bin\Debug\Persistencia.dll.config
+C:\Users\gabri\Source\Repos\Gabriel-Cortezz\ItemTema\Servico\bin\Debug\EntityFramework.xml
+C:\Users\gabri\Source\Repos\Gabriel-Cortezz\ItemTema\Servico\obj\Debug\Servico.csproj.AssemblyReference.cache
+C:\Users\gabri\Source\Repos\Gabriel-Cortezz\ItemTema\Servico\obj\Debug\Servico.csproj.CoreCompileInputs.cache
+C:\Users\gabri\Source\Repos\Gabriel-Cortezz\ItemTema\Servico\obj\Debug\Servico.csproj.CopyComplete
+C:\Users\gabri\Source\Repos\Gabriel-Cortezz\ItemTema\Servico\obj\Debug\Servico.dll
+C:\Users\gabri\Source\Repos\Gabriel-Cortezz\ItemTema\Servico\obj\Debug\Servico.pdb

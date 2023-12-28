@@ -6,6 +6,7 @@ using System.Web;
 using System.Web.Mvc;
 using Servico.Tabelas;
 using System.Net;
+using Modelo.Tabelas;
 
 namespace Aluguel_de_tema.Controllers
 {
@@ -25,7 +26,7 @@ namespace Aluguel_de_tema.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            ItemTema item = itemTemaService.ItemTemaPorID(id);
+            ItemTema item = ItemTemaServico.ItemTemaPorID(id);
 
             if (item == null)
             {
@@ -37,9 +38,7 @@ namespace Aluguel_de_tema.Controllers
         // GET: ItemTemas/Create
         public ActionResult Create()
         {
-            ViewBag.Temas = new SelectList(temaService.TodososTemas(), "TemaId", "Nome");
-            ViewBag.TemaId = new SelectList(itemTemaService.TodosOsItensTemas().OrderBy(b => b.Nome),
-            "TemaId", "Nome");
+            ViewBag.TemaId = new SelectList(ItemTemaServico.TodosOsItensTemas().OrderBy(b => b.nome));
             return View();
         }
 
@@ -49,7 +48,7 @@ namespace Aluguel_de_tema.Controllers
         {
             try
             {
-                itemTemaService.AdicionarItemTema(item);
+                ItemTemaServico.AdicionarItemTema(item);
                 return RedirectToAction("Index");
             }
             catch
@@ -65,14 +64,14 @@ namespace Aluguel_de_tema.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            ItemTema item = itemTemaService.ItemTemaPorID(id);
+            ItemTema item = ItemTemaServico.ItemTemaPorID(id);
 
             if (item == null)
             {
                 return HttpNotFound();
             }
 
-            ViewBag.TemaId = new SelectList(itemTemaService.TodosOsItensTemas().OrderBy(b => b.Nome), "TemaId", "Nome", item.TemaId);
+            ViewBag.TemaId = new SelectList(ItemTemaServico.TodosOsItensTemas().OrderBy(b => b.nome));
             return View(item);
         }
 
@@ -83,7 +82,7 @@ namespace Aluguel_de_tema.Controllers
             {
                 if (ModelState.IsValid)
                 {
-                    itemTemaService.AtualizarItemTema(item);
+                    ItemTemaServico.AtualizarItemTema(item);
                     return RedirectToAction("Index");
                 }
                 return View(item);
@@ -101,7 +100,7 @@ namespace Aluguel_de_tema.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            ItemTema item = itemTemaService.ItemTemaPorID(id);
+            ItemTema item = ItemTemaServico.ItemTemaPorID(id);
 
             if (item == null)
             {
@@ -116,8 +115,8 @@ namespace Aluguel_de_tema.Controllers
         {
             try
             {
-                itemTemaService.DeletarItemTema(id);
-                TempData["Message"] = "Item foi removido com sucesso!!";
+                ItemTemaServico.DeletarItemTema(id);
+                TempData["Message"] = "O Item foi excluido com sucesso!!";
                 return RedirectToAction("Index");
             }
             catch

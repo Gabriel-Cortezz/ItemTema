@@ -1,0 +1,14 @@
+C:\Users\gabri\Source\Repos\Gabriel-Cortezz\ItemTema\Persistencia\bin\Debug\Persistencia.dll.config
+C:\Users\gabri\Source\Repos\Gabriel-Cortezz\ItemTema\Persistencia\bin\Debug\Persistencia.dll
+C:\Users\gabri\Source\Repos\Gabriel-Cortezz\ItemTema\Persistencia\bin\Debug\Persistencia.pdb
+C:\Users\gabri\Source\Repos\Gabriel-Cortezz\ItemTema\Persistencia\bin\Debug\EntityFramework.dll
+C:\Users\gabri\Source\Repos\Gabriel-Cortezz\ItemTema\Persistencia\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\gabri\Source\Repos\Gabriel-Cortezz\ItemTema\Persistencia\bin\Debug\Modelo.dll
+C:\Users\gabri\Source\Repos\Gabriel-Cortezz\ItemTema\Persistencia\bin\Debug\Modelo.pdb
+C:\Users\gabri\Source\Repos\Gabriel-Cortezz\ItemTema\Persistencia\bin\Debug\EntityFramework.xml
+C:\Users\gabri\Source\Repos\Gabriel-Cortezz\ItemTema\Persistencia\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\gabri\Source\Repos\Gabriel-Cortezz\ItemTema\Persistencia\obj\Debug\Persistencia.csproj.AssemblyReference.cache
+C:\Users\gabri\Source\Repos\Gabriel-Cortezz\ItemTema\Persistencia\obj\Debug\Persistencia.csproj.CoreCompileInputs.cache
+C:\Users\gabri\source\repos\Gabriel-Cortezz\ItemTema\Persistencia\obj\Debug\Persistencia.csproj.CopyComplete
+C:\Users\gabri\Source\Repos\Gabriel-Cortezz\ItemTema\Persistencia\obj\Debug\Persistencia.dll
+C:\Users\gabri\Source\Repos\Gabriel-Cortezz\ItemTema\Persistencia\obj\Debug\Persistencia.pdb
